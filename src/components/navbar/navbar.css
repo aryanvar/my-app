@@ -1,0 +1,87 @@
+.navbar{
+    padding: 1rem 0 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    height: 15vh;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo a {
+    text-decoration: none;
+    font-size: 20px;
+    color:#184363;
+    font-weight: bolder;
+    font-size: 1.9rem;
+}
+
+.navbar-logo img {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-input {
+    display: flex;
+    align-items: center;
+    width: 55%;
+    height: 40px;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    padding: 6px 10px;
+    
+}
+
+.navbar-inputDropdown {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #333;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+.navbar-input input[type="text"] {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #333;
+    padding: 5px 10px;
+    flex-grow: 1;
+}
+
+.navbar-input input[type="text"]::placeholder {
+    color: #999;
+}
+
+
+.navbar-input img {
+    height: 20px;
+    cursor: pointer;
+}
+
+.navbar-contact{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.navbar-contact img{
+    width: 20px;
+}
+
+.navbar-contactContent p{
+    padding-right: 1.5rem;
+    font-size: 12px;
+}
+
+.navbar-contactContent span{
+    font-weight: bold;
+    font-size: 13px;
+}
