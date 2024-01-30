@@ -1,0 +1,57 @@
+.mainNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+}
+
+.mainNav button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.mainNav-center {
+    display: flex;
+    gap: 1.2rem;
+}
+
+
+.mainNav-center a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-weight: bolder;
+    position: relative;
+}
+
+.mainNav-center a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.3s ease;
+   
+}
+
+.mainNav-center a.active::after,
+.mainNav-center a:hover::after,
+.mainNav-center a.hovered::after {
+    width: 100%;
+    background-color: #184363;
+}
+
+.mainNav-right img {
+    margin-left: 10px;
+    width: 22px;
+    height: 20px;
+    gap: 1rem
+    ;
+}
