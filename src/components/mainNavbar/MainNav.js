@@ -24,7 +24,7 @@ const MainNav = () => {
           <div className="mainNav_left">
               <button>All Categories</button>
           </div>
-          <div className="mainNav-center">
+          <div className="mainNav_center">
   <a href=""
            className={activeLink === 'Home' ? 'active' : hoveredLink === 'Home' ? 'hovered' : ''}
            onClick={handleLinkClick}
@@ -54,7 +54,7 @@ const MainNav = () => {
            onClick={handleLinkClick}
            onMouseEnter={handleLinkHover}>Features</a>
       </div>
-          <div className="mainNav-right">
+          <div className="mainNav_right">
               <img src={compare} />
               <img src={like} />
               <img src={cart} />

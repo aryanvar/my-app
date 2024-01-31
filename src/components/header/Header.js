@@ -8,13 +8,13 @@ const Header = () => {
     
   return (
       <div className="header">
-        <div className="header-right">
+        <div className="header_right">
           <p>
             Due to the COVID 19 epidemic, orders may be processed with a slight
             delay
           </p>
         </div>
-            <div className="header-left">
+            <div className="header_left">
           <LanguageDropdown />
           <CurrencyDropdown />
           <a href=""><img src={user} />My Account</a>

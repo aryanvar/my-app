@@ -14,26 +14,26 @@
     height: 50px;
     
 }
-.header-right p {
+.header_right p {
     margin: 0;
     padding-left: 1rem;
 }
 
-.header-left {
+.header_left {
     display: flex;
     align-items: center;
     padding-right: 1rem;
     gap: 0.5rem;
 }
 
-.header-left a {
+.header_left a {
     text-decoration: none;
     color: inherit;
     display: flex;
     align-items: center;
 }
 
-.header-left a img {
+.header_left a img {
     margin-right: 2px;
     height: 1rem;
     font-weight: bold;

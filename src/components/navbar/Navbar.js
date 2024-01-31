@@ -24,17 +24,17 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="navbar-logo">
+      <div className="navbar_logo">
         <a href="">
           <img src={logo} alt="" />{" "}
         </a>
         <a href="">Propharm</a>
           </div>
-      <div className="navbar-input">
+      <div className="navbar_input">
         <select
           value={selectedOption}
           onChange={handleOptionChange}
-          className="navbar-inputDropdown"
+          className="navbar_inputDropdown"
         >
           <option value="option1">Category</option>
           <option value="option2">Option 2</option>
@@ -46,15 +46,15 @@ const Navbar = () => {
           value={searchQuery}
           onChange={handleSearchInputChange}
         />
-        <div className="navbar-inputSarchimage">
+        <div className="navbar_inputSarchimage">
           <img src={search} onClick={handleSearch} />
         </div>
       </div>
-      <div className="navbar-contact">
+      <div className="navbar_contact">
         <a href="">
           <img src={phone} />
         </a>
-        <div className="navbar-contactContent">
+        <div className="navbar_contactContent">
           <p>Sales & service support</p>
           <span>986-456-6782</span>
         </div>

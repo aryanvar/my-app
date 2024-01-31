@@ -6,12 +6,12 @@
     height: 15vh;
 }
 
-.navbar-logo {
+.navbar_logo {
     display: flex;
     align-items: center;
 }
 
-.navbar-logo a {
+.navbar_logo a {
     text-decoration: none;
     font-size: 20px;
     color:#184363;
@@ -19,13 +19,13 @@
     font-size: 1.9rem;
 }
 
-.navbar-logo img {
+.navbar_logo img {
     width: 60px;
     height: auto;
     margin-right: 10px;
 }
 
-.navbar-input {
+.navbar_input {
     display: flex;
     align-items: center;
     width: 55%;
@@ -36,7 +36,7 @@
     
 }
 
-.navbar-inputDropdown {
+.navbar_inputDropdown {
     border: none;
     outline: none;
     background-color: transparent;
@@ -46,7 +46,7 @@
     margin-right: 10px;
 }
 
-.navbar-input input[type="text"] {
+.navbar_input input[type="text"] {
     border: none;
     outline: none;
     background-color: transparent;
@@ -56,32 +56,32 @@
     flex-grow: 1;
 }
 
-.navbar-input input[type="text"]::placeholder {
+.navbar_input input[type="text"]::placeholder {
     color: #999;
 }
 
 
-.navbar-input img {
+.navbar_input img {
     height: 20px;
     cursor: pointer;
 }
 
-.navbar-contact{
+.navbar_contact{
     display: flex;
     align-items: center;
     gap: 0.7rem;
 }
 
-.navbar-contact img{
+.navbar_contact img{
     width: 20px;
 }
 
-.navbar-contactContent p{
+.navbar_contactContent p{
     padding-right: 1.5rem;
     font-size: 12px;
 }
 
-.navbar-contactContent span{
+.navbar_contactContent span{
     font-weight: bold;
     font-size: 13px;
 }
