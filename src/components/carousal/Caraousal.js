@@ -14,11 +14,12 @@ const Caraousal = ({ images }) => {
   return (
     <div className="carousel">
       <div
-        className="slides"
+        className="carousel_slides"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
         {images.map((image, index) => (
-          <img key={index} src={image} alt={`Slide ${index + 1}`} />
+            <img key={index} src={image} alt={`Slide ${index + 1}`} />
+            
         ))}
       </div>
       <button className="prev" onClick={prevSlide}>
