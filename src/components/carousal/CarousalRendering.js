@@ -29,7 +29,7 @@ const CarousalRendering = () => {
       );
     };
   return (
-    <div>
+    <div className='carousal_rendering'>
       <div>
         <Caraousal images={images} />
       </div>

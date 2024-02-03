@@ -7,6 +7,10 @@
     padding-bottom: 2rem;
 }
 
+.carousal_rendering{
+    width: 100%;
+    height: 80vh;
+}
 .carousel_slides {
     display: flex;
     transition: transform 0.5s ease;

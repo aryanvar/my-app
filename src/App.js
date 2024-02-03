@@ -1,4 +1,5 @@
 import './App.css';
+import ProductBar from './components/ProductBar/ProductBar';
 import CarousalRendering from './components/carousal/CarousalRendering';
 import Header from './components/header/Header';
 import MainNav from './components/mainNavbar/MainNav';
@@ -10,7 +11,8 @@ function App() {
       <Header />
       <Navbar />
       <MainNav />
-      <CarousalRendering/>
+      <CarousalRendering />
+      <ProductBar/>
     </div>
   );
 }
