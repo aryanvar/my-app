@@ -1,39 +1,34 @@
-import React,{useState} from 'react'
-import Caraousal from './Caraousal'
-import './caraousal.css'
-import image1 from '../../assets/image1.jpg'
-import image2 from '../../assets/image2.png'
-import image3 from '../../assets/image3.jpg'
+import React, { useState } from "react";
+import Caraousal from "./Caraousal";
+import "./caraousal.css";
+import image1 from "../../assets/image1.jpg";
+import image2 from "../../assets/image2.png";
+import image3 from "../../assets/image3.jpg";
 
 const CarousalRendering = () => {
-    const images = [image1, image2, image3]
+  const images = [image1, image2, image3];
 
-    const [searchQuery, setSearchQuery] = useState("");
-    const [selectedOption, setSelectedOption] = useState("option1");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedOption, setSelectedOption] = useState("option1");
 
-    const handleSearchInputChange = (event) => {
-      setSearchQuery(event.target.value);
-    };
+  const handleSearchInputChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
 
-    const handleOptionChange = (event) => {
-      setSelectedOption(event.target.value);
-    };
+  const handleOptionChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
 
-    const handleSearch = () => {
-      // Implement search functionality here
-      console.log(
-        "Searching for:",
-        searchQuery,
-        "with option:",
-        selectedOption
-      );
-    };
+  const handleSearch = () => {
+    // Implement search functionality here
+    console.log("Searching for:", searchQuery, "with option:", selectedOption);
+  };
   return (
-    <div className='carousal_rendering'>
+    <div className="carousal_rendering">
       <div>
-        <Caraousal images={images} />
+        <Caraousal />
       </div>
-      <div className="productBar">
+      {/* <div className="productBar">
         <div className="productBar_left">
           <h2>Select a product</h2>
         </div>
@@ -69,9 +64,9 @@ const CarousalRendering = () => {
             <button>Shop Now</button>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
-}
+};
 
-export default CarousalRendering
+export default CarousalRendering;

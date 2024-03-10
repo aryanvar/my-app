@@ -8,7 +8,7 @@
 }
 
 .carousal_rendering{
-    width: 100%;
+    width: 90%;
     height: 80vh;
 }
 .carousel_slides {
@@ -112,3 +112,4 @@
 .productBar_rightShop button:hover {
     background-color: #184363;
 }
+

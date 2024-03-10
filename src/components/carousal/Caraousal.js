@@ -1,35 +1,40 @@
-import React, { useState } from 'react'
-import './caraousal.css'
+import React, { useState } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import image1 from "../../assets/image1.jpg";
+import "./caraousal.css";
 
-const Caraousal = ({ images }) => {
-    const [currentSlide, setCurrentSlide] = useState(0);
-
-    const nextSlide = () => {
-      setCurrentSlide((currentSlide + 1) % images.length);
-    };
-
-    const prevSlide = () => {
-      setCurrentSlide((currentSlide - 1 + images.length) % images.length);
-    };
+const Caraousal = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
-    <div className="carousel">
-      <div
-        className="carousel_slides"
-        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-      >
-        {images.map((image, index) => (
-            <img key={index} src={image} alt={`Slide ${index + 1}`} />
-            
-        ))}
-      </div>
-      <button className="prev" onClick={prevSlide}>
-        &#10094;
-      </button>
-      <button className="next" onClick={nextSlide}>
-        &#10095;
-      </button>
+    <div className="slider-container">
+      <Slider {...settings}>
+        <div>
+          <img
+            src={image1}
+            alt=""
+            style={{ width: "50%", justifyContent: "center" }}
+          />
+        </div>
+        <div>
+          <img src={image1} alt="" />
+        </div>
+        <div>
+          <img src={image1} alt="" />
+        </div>
+        <div>
+          <img src={image1} alt="" />
+        </div>
+      </Slider>
     </div>
   );
-}
+};
 
-export default Caraousal
+export default Caraousal;

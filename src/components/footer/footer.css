@@ -1,0 +1,77 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer div {
+    padding: 10px;
+}
+
+.footer_part1 {
+    border-right: 1px solid black;
+}
+
+.footer_part2 {
+    line-height: 1.5rem;
+}
+
+.footer_part1Logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.footer__part2Info{
+    gap: 1rem;
+}
+
+.footer_part1Logo h2,
+.footer__part2Info h2,
+.footer__part2Info h1,
+.footer_part3Information h3,
+.footer_part4Account h3 {
+    margin: 0 0 10px;
+}
+
+.footer_part1Contact div img {
+    width: 24px;
+    margin-right: 5px;
+}
+
+.footer_part1Contact {
+    display: flex;
+}
+
+.footer__part2Info,
+.footer_part3Information,
+.footer_part4Account {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__part2Info a,
+.footer_part3Information a,
+.footer_part4Account a {
+    margin: 5px 0;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media Query for Mobile Phones */
+@media (max-width: 480px) {
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer_part1Contact {
+        justify-content: center;
+    }
+}

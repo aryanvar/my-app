@@ -1,0 +1,233 @@
+.productCard {
+    display: flex;
+    padding: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    width: 100%;
+}
+
+
+.productCard1 {
+    display: flex;
+    background-image: url(../../assets/background1.jpg);
+    background-size: cover;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 50%;
+    max-width: 450px;
+    height: 40vh;
+}
+
+.productCard1Image img {
+    width: 100%;
+    max-width: 18vw;
+    height: 200px;
+    object-fit: cover;
+    padding: 1.5rem;
+}
+
+.productCardInfo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-left: 4rem;
+
+}
+
+.productCardInfo h3 {
+    color: #d9534f;
+    margin-bottom: 10px;
+}
+
+.productCardInfo p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.productCardInfo button {
+    padding: 10px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.productCardInfo button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .productCard1 {
+        flex-direction: column;
+        width: 80%
+    }
+
+    .productCard1Image img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.productCard2 {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../assets/background2.jpg);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    height: 235px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productCard2Image img {
+    width: 100%;
+    max-width: 50vh;
+    height: 50%;
+    object-fit: cover;
+}
+
+.productCardInfo2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.productCardInfo2 h3 {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.productCardInfo2 p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.productCardInfo2 button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.productCardInfo2 button:hover {
+    background-color: #0056b3;
+}
+
+.productCard3 {
+    display: flex;
+    background-image: url(../../assets/background5.jpg);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 350px;
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productCardInfo3 {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.productCardInfo3 h3 {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.productCardInfo3 p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.productCardInfo3 button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.productCardInfo3 button:hover {
+    background-color: #0056b3;
+}
+
+.productCard3Image img {
+    width: 100%;
+    height: auto;
+    max-height: 70%;
+    object-fit: cover;
+}
+
+.productCard4 {
+    display: flex;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    /* overflow: hidden; */
+    width: 300px;
+    height: 300px;
+    /* flex-direction: column; */
+    align-items: center;
+
+}
+
+.productCard4Info {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.productCard4Info h3 {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.productCard4Info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.productCard4Info button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.productCard4Info button:hover {
+    background-color: #0056b3;
+}
+
+.productCard4Image img {
+    width: 100%;
+    height: auto;
+    /* Allow the image to adjust its height */
+    max-height: 70%;
+    /* Limit the image height */
+    object-fit: cover;
+}
